@@ -1,0 +1,23 @@
+<header class="col-xs-4">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Cart <i class="glyphicon glyphicon-shopping-cart"></i></h3>
+        </div>
+        <div class="panel-body" ng-show="cartCtrl.cart.totalPrice">
+            Panel content
+            <ul class="list-group">
+                <li class="list-group-item" ng-repeat="cartItem in cartCtrl.cart.items">
+                    <p>
+                        {{cartItem.name}} - <span class="badge">x{{cartItem.quantity}}</span>
+                        <button class="btn btn-xs btn-danger" ng-click="cartCtrl.removeFromCart(cartItem)">Remove</button>
+                    </p>
+
+                </li>
+            </ul>
+            <li class="list-group-item">
+                Total: £{{cartCtrl.cart.totalPrice}} <button type="button" class="btn btn-success">Checkout</button>
+            </li>
+
+        </div>
+    </div>
+</header>

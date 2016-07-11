@@ -1,0 +1,14 @@
+<!-- partials/state2.list.html -->
+<h3>List of State 1 Things</h3>
+<ul>
+    <li ng-repeat="item in state1.items">{{ item }}</li>
+
+</ul>
+Products:
+> {{ productItems | json }} <
+
+<ul>
+    <li ng-repeat="product in state1.productItems">
+        {{ product.name }}
+    </li>
+</ul>

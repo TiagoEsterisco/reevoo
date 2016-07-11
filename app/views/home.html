@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Reevoo Shop shop</h1>
+            <section class="col-xs-8">
+                <ul>
+                    <div class="col-md-4" ng-repeat="product in home.products">
+                        <div class="thumbnail">
+                            <h2>{{product.name}}</h2>
+                            <img ng-src="{{product.image}}" alt="{{product.name}}" width="80">
+                            <p>{{product.description}}</p>
+                            <button ng-click="home.addEvent(product)" class="btn btn-info"> <h4>£{{product.price}}</h4> Add to cart </button>
+                        </div>
+                    </div>
+                </ul>
+            </section>
+            <div cart-directive cart="home.cart">Directive is not loaded.</div>
+        </div>
+    </div>
+</div>
