@@ -1,4 +1,4 @@
-Clone this repo from
-Run `npm install` from the root directory
-Run `npm run dev`
-To run the tests `gulp unit`
+1. Clone this repo from
+2. Run `npm install` from the root directory
+3. Run `npm run dev`
+4. To run the tests `gulp unit`
